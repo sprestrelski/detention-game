@@ -78,6 +78,7 @@ public class PlayerMovement : MonoBehaviour {
 		if(other.name.Equals("QuestionMark")){
 			SceneManager.LoadScene("Scene2Cut2");
 		}
+
 	}
 
 }

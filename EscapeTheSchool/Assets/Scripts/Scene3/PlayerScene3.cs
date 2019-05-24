@@ -15,6 +15,7 @@ public class PlayerScene3 : MonoBehaviour {
 	public Text speech;
 	public RawImage paperClip;
 	public RawImage mapSprite;
+	int emptyCollides = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -72,6 +73,16 @@ public class PlayerScene3 : MonoBehaviour {
 			createMap ();
 			speech.text = "The door is open now!";
 			StartCoroutine (waiterCollect ());
+		} else if (other.name.Contains ("empty")) {
+			Debug.Log ("empty collider");
+			emptyCollides += 1;
+			if (emptyCollides % 2 == 0) {
+				speech.text = "Nothing to see here.";
+			} else if (emptyCollides % 6 == 0) {
+				speech.text = "Ew, there's gum under this one.";
+			} else {
+				speech.text = "There's nothing in this desk.";
+			}
 		}
 	}
 	public void createMap(){
