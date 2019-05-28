@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class S3S4 : MonoBehaviour {
+public class toS4 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

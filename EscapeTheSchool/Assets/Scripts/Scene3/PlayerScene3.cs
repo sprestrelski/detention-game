@@ -78,7 +78,7 @@ public class PlayerScene3 : MonoBehaviour {
 			emptyCollides += 1;
 			if (emptyCollides % 2 == 0) {
 				speech.text = "Nothing to see here.";
-			} else if (emptyCollides % 6 == 0) {
+			} else if (emptyCollides % 7 == 0) {
 				speech.text = "Ew, there's gum under this one.";
 			} else {
 				speech.text = "There's nothing in this desk.";

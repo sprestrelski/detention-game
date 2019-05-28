@@ -21,10 +21,10 @@ public class FlashBlack : MonoBehaviour {
 	public IEnumerator timeBetweenFlashes ()
 	{
 		flashed = true;
-		float timeToWait = Random.Range(0, 3f);
+		float timeToWait = Random.Range(0, 4f);
 		yield return new WaitForSeconds(timeToWait);
 		flash.enabled = true;
-		yield return new WaitForSeconds(0.1f);
+		yield return new WaitForSeconds(0.2f);
 		flash.enabled = false;
 		flashed = false;
 	}

@@ -18,7 +18,7 @@ public class Door : MonoBehaviour {
 
 	private void OnTriggerEnter2D (Collider2D other)
 	{
-		if (other.name.Contains ("doorCheck")) {
+		if (other.name.Contains ("doorCheck") || Input.GetKeyDown ("t")) {
 			if (GameObject.Find ("Map(Clone)") != null) {
 				Destroy (instantiatedObj);
 			} else {

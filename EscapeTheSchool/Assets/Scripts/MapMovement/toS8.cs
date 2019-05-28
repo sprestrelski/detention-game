@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class S3S6 : MonoBehaviour {
+public class toS8 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +15,6 @@ public class S3S6 : MonoBehaviour {
 	}
 
 	public void OnClick(){
-		SceneManager.LoadScene ("Scene6Game4");
+		SceneManager.LoadScene ("Scene8Game6");
 	}
 }
