@@ -2,15 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
 public class S2PlayerAnimation : MonoBehaviour {
 	public float movementSpeed = 8;
 	// Use this for initialization
 	public bool startAnim = false;
-	public Image flash;
-
-
 	// Use this for initialization
 	void Start () {
 		StartCoroutine(waiter());
@@ -33,14 +28,7 @@ public class S2PlayerAnimation : MonoBehaviour {
 	private void OnTriggerEnter2D (Collider2D other)
 	{
 		if(other.name.Equals("BlobEnemy")){
-			StartCoroutine(trigger());
+			SceneManager.LoadScene("Scene3Game1");
 		}
-	}
-
-	public IEnumerator trigger ()
-	{
-		flash.enabled = true;
-		yield return new WaitForSeconds(3f);
-		SceneManager.LoadScene("Scene3Game1");
 	}
 }

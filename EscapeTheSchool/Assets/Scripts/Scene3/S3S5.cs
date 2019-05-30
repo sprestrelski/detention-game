@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class toS4 : MonoBehaviour {
+public class S3S5 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +15,6 @@ public class toS4 : MonoBehaviour {
 	}
 
 	public void OnClick(){
-		SceneManager.LoadScene ("Scene4Game2");
+		SceneManager.LoadScene ("Scene5Game3");
 	}
 }

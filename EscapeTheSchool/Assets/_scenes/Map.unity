@@ -236,31 +236,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114683470209156648, guid: 56cf6d962d0e73440aa318b65289b202,
-        type: 2}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114380719833317746, guid: 56cf6d962d0e73440aa318b65289b202,
-        type: 2}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114742178556958082, guid: 56cf6d962d0e73440aa318b65289b202,
-        type: 2}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114323092818038226, guid: 56cf6d962d0e73440aa318b65289b202,
-        type: 2}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114931246568450482, guid: 56cf6d962d0e73440aa318b65289b202,
-        type: 2}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 223134591527381866, guid: 56cf6d962d0e73440aa318b65289b202,
         type: 2}
       propertyPath: m_Camera

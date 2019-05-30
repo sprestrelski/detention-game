@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class PlayerScene4 : MonoBehaviour {
+using UnityEngine.SceneManagement;
+public class S3S4 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -14,10 +14,7 @@ public class PlayerScene4 : MonoBehaviour {
 		
 	}
 
-	private void OnTriggerEnter2D (Collider2D other)
-	{
-		if (other.name.Contains ("hotplates")){
-			Debug.Log("hot plate collided");
-		}
+	public void OnClick(){
+		SceneManager.LoadScene ("Scene4Game2");
 	}
 }
