@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour {
 			transform.position = new Vector3(transform.position.x, -12f, 0);
 		}
 
-		if (Input.GetKeyDown ("t") && currentScene.name != "Scene3Game1") {
+		if (Input.GetKeyDown ("t") && currentScene.name != "Scene3Game1" && currentScene.name != "Scene5Game3") {
 
 			if (GameObject.Find ("Map(Clone)") != null) {
 				Destroy (instantiatedObj);
@@ -75,8 +75,11 @@ public class PlayerMovement : MonoBehaviour {
 
 	private void OnTriggerEnter2D (Collider2D other)
 	{
-		if(other.name.Equals("QuestionMark")){
-			SceneManager.LoadScene("Scene2Cut2");
+		if (other.name.Equals ("QuestionMark")) {
+			SceneManager.LoadScene ("Scene2Cut2");
+		} else if (other.name.Equals ("CutSceneDoor")) {
+			SceneManager.LoadScene("Scene5Game3");
+
 		}
 
 	}

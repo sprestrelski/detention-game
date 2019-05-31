@@ -15,6 +15,6 @@ public class S3S5 : MonoBehaviour {
 	}
 
 	public void OnClick(){
-		SceneManager.LoadScene ("Scene5Game3");
+		SceneManager.LoadScene ("Hallway");
 	}
 }

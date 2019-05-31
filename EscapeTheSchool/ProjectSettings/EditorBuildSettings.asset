@@ -32,3 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_scenes/Scene3Return.unity
     guid: 3af4932214cc4374eb5cfb1a972bd660
+  - enabled: 1
+    path: Assets/_scenes/Hallway.unity
+    guid: 0b77edfb6e97c0144b204533ae3af268
