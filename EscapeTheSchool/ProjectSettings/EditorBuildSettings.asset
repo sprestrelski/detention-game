@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_scenes/Prologue.unity
+    guid: 8f1ae6e5810df314f83b51ffff991fbb
+  - enabled: 1
     path: Assets/_scenes/Scene1Cut1.unity
     guid: 2fb169df10bd9874ca4154a46e66e4bf
   - enabled: 1
@@ -35,3 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_scenes/Hallway.unity
     guid: 0b77edfb6e97c0144b204533ae3af268
+  - enabled: 1
+    path: Assets/_scenes/Scene9MiniGame1.unity
+    guid: 460fa4cb22a009b43b985a6cc66b761b
