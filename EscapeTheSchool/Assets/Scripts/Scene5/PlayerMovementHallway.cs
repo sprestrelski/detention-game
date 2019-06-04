@@ -2,7 +2,7 @@
 using System;
 using System.Collections;
 using UnityEngine.SceneManagement;
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovementHallway : MonoBehaviour {
 	public GameObject map;
 	public float speed;             //Floating point variable to store the player's movement speed.
 	private GameObject instantiatedObj;
@@ -21,10 +21,10 @@ public class PlayerMovement : MonoBehaviour {
 		float verticalInput = Input.GetAxis ("Vertical");
 		transform.Translate (new Vector3 (0, 1, 0) * Time.deltaTime * speed * verticalInput);
 
-		if (transform.position.x > 30f) {
-			transform.position = new Vector3 (30f, transform.position.y, 0);
-		} else if (transform.position.x < -25.5f) {
-			transform.position = new Vector3 (-25.5f, transform.position.y, 0);
+		if (transform.position.x > 37f) {
+			transform.position = new Vector3 (37f, transform.position.y, 0);
+		} else if (transform.position.x < -37f) {
+			transform.position = new Vector3 (-37f, transform.position.y, 0);
 		}
 
 		if(transform.position.y > 12f)
