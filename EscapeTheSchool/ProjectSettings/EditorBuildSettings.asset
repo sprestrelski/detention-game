@@ -41,3 +41,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_scenes/Scene9MiniGame1.unity
     guid: 460fa4cb22a009b43b985a6cc66b761b
+  - enabled: 1
+    path: Assets/_scenes/TestMinigame/Question1.unity
+    guid: e7b31da578d79ae4991f37cdda317e85
+  - enabled: 0
+    path: 
+    guid: 3d5155c0fa1929648944144cb88106c9
+  - enabled: 0
+    path: 
+    guid: 3d5155c0fa1929648944144cb88106c9
+  - enabled: 1
+    path: Assets/_scenes/TestMinigame/Question2.unity
+    guid: 6d7031c0d420bb8448850d6cea7133d0
+  - enabled: 1
+    path: Assets/_scenes/TestMinigame/Question3.unity
+    guid: bfeb4de2d2953cc4f8c22898a578b43b
+  - enabled: 1
+    path: Assets/_scenes/TestMinigame/Question4.unity
+    guid: e52ee1f1eb14b984dbc4ab5e71e6682f
+  - enabled: 1
+    path: Assets/_scenes/TestMinigame/Question5.unity
+    guid: 49d52cee3bdf2de4a84b85c1b72d629d
+  - enabled: 1
+    path: Assets/_scenes/TestMinigame/TestIntro.unity
+    guid: 073b32f3020a3494d84c8f98e619284e
+  - enabled: 1
+    path: Assets/_scenes/CreditsScene.unity
+    guid: 2ac057aa02f41a843a90e7b726c96f4c

@@ -12,12 +12,14 @@ public class ingredientCollides : MonoBehaviour {
 	public bool cakeisnotalie;
 	public bool cakemade;
 	public bool secretIngredient;
+	public bool birthdayCake;
     public Text speech;
 
     //cake decision
-    public GameObject[] cakes = new GameObject[8];
+    public GameObject[] cakes = new GameObject[7];
     public GameObject[] burntCakes = new GameObject[3];
     public GameObject redvelvet;
+    public GameObject birthday;
 
 	// Use this for initialization
 	void Start () {
@@ -40,14 +42,17 @@ public class ingredientCollides : MonoBehaviour {
 		if (ingredientsAdded > 4) {
 			if (wrong == false && correctIngredients == 4 && secretIngredient == true) {
 				cakeisnotalie = true;
-				redvelvet.SetActive(true);
+				redvelvet.SetActive (true);
 				Debug.Log ("yes");
+			} else if (birthdayCake == true && correctIngredients == 4 && wrong == false){
+				birthday.SetActive(true);
 			} else if (wrong == true && correctIngredients == 4 && cakemade == false) {
 				//random cake made
 				cakemade = true;
 				int random = Random.Range(0,7);
 				cakes[random].SetActive(true);
 			} else if ( cakemade == false ){
+                cakemade = true;
 				int random2 = Random.Range(0,2);
 				burntCakes[random2].SetActive(true);
 				Debug.Log("cake not made");
@@ -67,9 +72,16 @@ public class ingredientCollides : MonoBehaviour {
 			secretIngredient = true;
 			ingredientsAdded += 1;
 			Destroy (other.gameObject);
-		}else if (other.name.Contains("Cake")){
-			speech.color = Color.white;
-			speech.text = "bruh.";
+		}else if (other.name.Contains("medal")){
+			birthdayCake = true;
+			ingredientsAdded +=1;
+			Destroy(other.gameObject);
+        } else if (other.name.Contains("Cake")) {
+            speech.color = Color.white;
+            speech.text = "bruh.";
+        }
+        else if (other.name.Contains("burnt")){
+            Debug.Log("lol");
 		} else {
 			wrong = true;
 			ingredientsAdded+=1;

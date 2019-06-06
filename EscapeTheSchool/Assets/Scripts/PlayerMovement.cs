@@ -60,6 +60,8 @@ public class PlayerMovement : MonoBehaviour {
 
 		} else if (other.name.Equals ("mapreopen1") || other.name.Equals ("mapreopen2")) {
 			openMap ();
+		} else if (other.name.Equals ("testSpawn") && GameObject.Find("epoxy") == null) {
+			SceneManager.LoadScene ("TestIntro");
 		}
 
 	}

@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class cutDoorChemicals : MonoBehaviour {
+
+public class Friendtalk : MonoBehaviour {
+
 	public Text text;
-	public GameObject chemicals;
+	public GameObject brokenkeyfob;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,11 +19,11 @@ public class cutDoorChemicals : MonoBehaviour {
 
 	private void OnTriggerEnter2D (Collider2D other)
 	{
-		if (other.name.Equals ("redvelvetCake")) {
+		if (other.name.Equals ("birthdayCake")) {
 			Debug.Log ("gotem");
-			Destroy(GameObject.Find("redvelvetCake"));
-			chemicals.SetActive (true);
-			text.text = "Whoa, there are vials outside the door!";
+			Destroy(GameObject.Find("birthdayCake"));
+			brokenkeyfob.SetActive (true);
+			text.text = "Thanks man!";
 		}
 
 

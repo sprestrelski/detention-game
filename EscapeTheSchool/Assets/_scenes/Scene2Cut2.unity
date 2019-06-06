@@ -158,7 +158,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 8eb4f8c43d2b8fd4bad855651147e151, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e13f40aa7a2574d4084f0eafb86ad946, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -530,7 +530,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 237134804a8dd2a47b37575a31873696, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 663a145c463bf4546be65f1b29d428a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1102,7 +1102,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 152356d725c1bd541b287bd64991b707, type: 3}
+    m_Font: {fileID: 12800000, guid: 1db29ba49a96698469835e6372097844, type: 3}
     m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
