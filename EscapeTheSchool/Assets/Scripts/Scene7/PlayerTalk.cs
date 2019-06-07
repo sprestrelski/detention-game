@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class PlayerTalk : MonoBehaviour {
 	public Text dialogue;
-	public RawImage textBox;
+
 	public Text speech;
-	bool triggered;
-	public bool doneTalking;
+
+
 
 	public GameObject talkedAlready;
 
 	// Use this for initialization
 	void Start () {
 		dialogue.text = "";
-		speech.text = "Who...?";
-		triggered = false;
-		doneTalking = false;
+		speech.text = "";
+
+
 	}
 	
 	// Update is called once per frame
@@ -27,17 +27,24 @@ public class PlayerTalk : MonoBehaviour {
 
 	private void OnTriggerEnter2D (Collider2D other)
 	{
-		if (triggered == false) {
+		if (GameObject.Find ("talkedAlready") == null && GameObject.Find("birthdayCake") == null) {
 			if (other.name.Contains ("football")) {
-				Debug.Log("triggered");
-				triggered = true;
+				Debug.Log ("triggered");
+
 				speech.text = "Hey man, how's it going...?";
 				StartCoroutine (dialogueWait ());
 
 
 			}
-		} else if (doneTalking == true){
+		} else if (GameObject.Find ("talkedAlready") != null && GameObject.Find ("birthdayCake") == null) {
 			speech.text = "I don't have the cake yet, he won't talk to me.";
+			StartCoroutine (waiterCollect ());
+		} else if (GameObject.Find ("talkedAlready") == null && GameObject.Find ("birthdayCake") != null) {
+			speech.text = "Hey man! Happy birthday! You didn't think I would forget, did ya?";
+			StartCoroutine (waiterCollect ());
+		} else if (GameObject.Find ("talkedAlready") != null && GameObject.Find ("birthdayCake") != null) {
+			speech.text = "Here man. Here's your cake.";
+			StartCoroutine (waiterCollect ());
 		}
 	}
 
@@ -50,9 +57,17 @@ public class PlayerTalk : MonoBehaviour {
 		speech.text = "I guess I forgot it was your birthday today...";
 		yield return new WaitForSeconds(2.5f);
 		speech.text = "I'll try to bring you a cake.";
-		doneTalking = true;
+
 		talkedAlready.SetActive(true);
 
+		StartCoroutine (waiterCollect ());
+	}
 
+	public IEnumerator waiterCollect ()
+	{
+		yield return new WaitForSeconds(2.5f);
+		speech.text = "";
+	
+	
 	}
 }

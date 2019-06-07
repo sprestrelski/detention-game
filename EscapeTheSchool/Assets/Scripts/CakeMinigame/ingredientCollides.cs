@@ -82,7 +82,7 @@ public class ingredientCollides : MonoBehaviour {
         }
         else if (other.name.Contains("burnt")){
             Debug.Log("lol");
-		} else {
+		} else if (other.name.Contains("w")) {
 			wrong = true;
 			ingredientsAdded+=1;
 			Destroy(other.gameObject);

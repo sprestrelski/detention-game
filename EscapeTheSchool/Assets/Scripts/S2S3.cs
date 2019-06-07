@@ -22,7 +22,6 @@ public class S2S3 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timeLeft -= Time.deltaTime;
-		Debug.Log(timeLeft);
 		if ( timeLeft < 27 && timeLeft > 25) dialogue.text = "What do you think you're doing?";
 		if ( timeLeft < 25 && timeLeft > 0) dialogue.text = "Do you have a permit???"; 
 		if ( timeLeft < 0) {

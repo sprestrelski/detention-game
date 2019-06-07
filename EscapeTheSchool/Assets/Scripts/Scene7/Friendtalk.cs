@@ -23,9 +23,18 @@ public class Friendtalk : MonoBehaviour {
 			Debug.Log ("gotem");
 			Destroy(GameObject.Find("birthdayCake"));
 			brokenkeyfob.SetActive (true);
-			text.text = "Thanks man!";
+			text.text = "Wow man! Thanks for keeping track of the key!";
+			StartCoroutine(waiterCollect());
 		}
 
 
+	}
+
+	public IEnumerator waiterCollect ()
+	{
+		yield return new WaitForSeconds(2.5f);
+		text.text = "You should probably fix your key.";
+	
+	
 	}
 }
