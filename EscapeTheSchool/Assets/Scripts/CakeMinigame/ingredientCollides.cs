@@ -40,18 +40,20 @@ public class ingredientCollides : MonoBehaviour {
 	{
 		//checking that the right ingredients were added
 		if (ingredientsAdded > 4) {
-			if (wrong == false && correctIngredients == 4 && secretIngredient == true) {
+			if (wrong == false && correctIngredients == 4 && secretIngredient == true && birthdayCake != true) {
+				cakemade = true;
 				cakeisnotalie = true;
 				redvelvet.SetActive (true);
 				Debug.Log ("yes");
-			} else if (birthdayCake == true && correctIngredients == 4 && wrong == false){
+			} else if (birthdayCake == true && correctIngredients == 4 && wrong == false && cakeisnotalie == false ){
+				cakemade = true;
 				birthday.SetActive(true);
-			} else if (wrong == true && correctIngredients == 4 && cakemade == false) {
+			} else if (wrong == true && correctIngredients == 4 && cakemade == false && cakeisnotalie == false) {
 				//random cake made
 				cakemade = true;
 				int random = Random.Range(0,7);
 				cakes[random].SetActive(true);
-			} else if ( cakemade == false ){
+			} else if ( cakemade == false && cakeisnotalie == false){
                 cakemade = true;
 				int random2 = Random.Range(0,2);
 				burntCakes[random2].SetActive(true);
