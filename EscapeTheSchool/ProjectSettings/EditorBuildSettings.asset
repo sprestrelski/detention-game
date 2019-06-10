@@ -68,3 +68,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_scenes/CreditsScene.unity
     guid: 2ac057aa02f41a843a90e7b726c96f4c
+  - enabled: 1
+    path: Assets/_scenes/FinalBossScene.unity
+    guid: 6268f820f03fb1247975e326adea9309

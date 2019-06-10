@@ -4,66 +4,41 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class checkForObjects : MonoBehaviour {
+public class Boss : MonoBehaviour {
 
 	public bool instakill;
 	public Image flash;
-	public Image theButcher;
-	public Image whiteFlash;
 	public Text text;
 	private GameObject instantiatedObj;
 	public string[] collectibles;
-	public RectTransform r_Butcher;
-
-
+	public float speed;
+	public Transform target;
 	// Use this for initialization
 	void Start ()
 	{
 		collectibles = new string[]{"epoxy", "chemicals", "brokenkeyFob", "birthdayCake", "carrotCake", "chocolateCake", "lemonCake", "redvelvetCake", "spongeCake", "strawberryCake", "tiramisuCake", "vanillaCake", "burnt1", "burnt2", "burnt3"};
-		if (GameObject.Find ("epoxy") == null && GameObject.Find ("chemicals") != null && GameObject.Find ("brokenkeyFob") != null) {
-			Debug.Log ("u won lel");
-		} else {
-			instakill = true;
-			GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
-		}
+		speed = 15f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		Vector3 moveDir = (target.position - transform.position).normalized;
+		transform.position += moveDir * speed * Time.deltaTime;
 	}
 
 	private void OnTriggerEnter2D (Collider2D other)
 	{
-		if(other.name.Contains("butcher")){
-			StartCoroutine(pauseBlack());
+		if (other.name.Equals ("Player")) {
+			StartCoroutine (lose ());
+		} else if (other.name.Equals ("chemicals")) {
+			Destroy (gameObject);
 		}
 	}
 
-	public IEnumerator pauseBlack ()
+	public IEnumerator lose()
 	{
-		//"jumpscare""
 		flash.enabled = true;
-		yield return new WaitForSeconds (2f);
-		theButcher.enabled = true;
-		for (int i = 1; i < 20; i++) {
-			theButcher.rectTransform.sizeDelta = new Vector2 (i * 50, i * 50);
-			if (i % 2 == 0) {
-				r_Butcher.transform.rotation = Quaternion.Euler (0, 0, 5	);
-			} else {
-				r_Butcher.transform.rotation = Quaternion.Euler (0, 0, 355);
-			}
-			yield return new WaitForSeconds (.02f);
-		}
-		theButcher.enabled = false;
-
-		//flashbang effect
-		whiteFlash.enabled = true;
-		yield return new WaitForSeconds(.3f);
-		whiteFlash.CrossFadeAlpha(0, 1f, false);
 		yield return new WaitForSeconds(2f);
-
-		//story text
 		text.text = "You failed to escape.";
 		yield return new WaitForSeconds(2f);
 		text.text = "You failed to escape.\nYou are sent back to detention.";
