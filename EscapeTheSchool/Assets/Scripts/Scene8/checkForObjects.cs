@@ -14,18 +14,50 @@ public class checkForObjects : MonoBehaviour {
 	private GameObject instantiatedObj;
 	public string[] collectibles;
 	public RectTransform r_Butcher;
+	public AudioSource jumpscare;
+
+	public bool collided;
 
 
 	// Use this for initialization
 	void Start ()
 	{
-		collectibles = new string[]{"epoxy", "chemicals", "brokenkeyFob", "birthdayCake", "carrotCake", "chocolateCake", "lemonCake", "redvelvetCake", "spongeCake", "strawberryCake", "tiramisuCake", "vanillaCake", "burnt1", "burnt2", "burnt3"};
+		collided = false;
+		collectibles = new string[] {
+			"epoxy",
+			"chemicals",
+			"brokenkeyFob",
+			"birthdayCake",
+			"carrotCake",
+			"chocolateCake",
+			"lemonCake",
+			"redvelvetCake",
+			"spongeCake",
+			"strawberryCake",
+			"tiramisuCake",
+			"vanillaCake",
+			"burnt1",
+			"burnt2",
+			"burnt3"
+		};
 		if (GameObject.Find ("epoxy") == null && GameObject.Find ("chemicals") != null && GameObject.Find ("brokenkeyFob") != null) {
 			Debug.Log ("u won lel");
 		} else {
 			instakill = true;
-			GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
+			//GameObject.Find("Player").GetComponent<PlayerMovementBoss>().enabled = false;
 		}
+
+		for (int i = 0; i < collectibles.Length; i++) {
+			if (GameObject.Find (collectibles [i]) != null) {
+				if (collectibles [i] != "chemicals" && collectibles [i] != "brokenkeyFob") {
+					instantiatedObj = GameObject.Find (collectibles [i]);
+					Destroy (instantiatedObj);
+				}
+			}
+		}
+
+		AudioSource[]audios = GetComponents<AudioSource>();
+		jumpscare = audios[0];
 	}
 	
 	// Update is called once per frame
@@ -35,7 +67,8 @@ public class checkForObjects : MonoBehaviour {
 
 	private void OnTriggerEnter2D (Collider2D other)
 	{
-		if(other.name.Contains("butcher")){
+		if(other.name.Contains("butcher") && collided == false){
+			collided = true;
 			StartCoroutine(pauseBlack());
 		}
 	}
@@ -43,10 +76,11 @@ public class checkForObjects : MonoBehaviour {
 	public IEnumerator pauseBlack ()
 	{
 		//"jumpscare""
+		jumpscare.Play();
 		flash.enabled = true;
-		yield return new WaitForSeconds (2f);
+		yield return new WaitForSeconds (3f);
 		theButcher.enabled = true;
-		for (int i = 1; i < 20; i++) {
+		for (int i = 10; i < 20; i++) {
 			theButcher.rectTransform.sizeDelta = new Vector2 (i * 50, i * 50);
 			if (i % 2 == 0) {
 				r_Butcher.transform.rotation = Quaternion.Euler (0, 0, 5	);

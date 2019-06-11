@@ -17,7 +17,7 @@ public class finalCarScript : MonoBehaviour {
 
 	private void OnTriggerEnter2D (Collider2D other)
 	{
-		if (other.name.Equals ("brokenkeyFob") && GameObject.Find ("thebutcher") == null) {
+		if ( (other.name.Equals ("brokenkeyFob") || other.name.Equals("Player")) && GameObject.Find ("thebutcher") == null) {
 			Debug.Log("collided");
 			Destroy (GameObject.Find("brokenkeyFob"));
 			SceneManager.LoadScene ("CreditsScene");

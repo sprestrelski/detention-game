@@ -40,7 +40,10 @@ public class playerNext : MonoBehaviour {
 			StartCoroutine(choices());
 		}
 		if(other.name.Equals("parkingLot") && ready == true){
-			SceneManager.LoadScene("FinalBossScene");
+			speech.enabled = false;
+			flash.enabled = true;
+			StartCoroutine(lezgo());
+
 		}
 	}
 
@@ -52,6 +55,22 @@ public class playerNext : MonoBehaviour {
 		text.text = "I'm not sure I'm ready to escape yet.\nIs there something else I need to find...?";
 		yield return new WaitForSeconds(2.5f);
 		text.text = "I'm not sure I'm ready to escape yet.\nIs there something else I need to find...?\nI can still try...";
+		yield return new WaitForSeconds(2.5f);
+		continueGame.GetComponent<Image>().enabled = true;
+		wait.GetComponent<Image>().enabled = true;
+		continueGame.interactable = true;
+		wait.interactable = true;
+	}
+
+
+	public IEnumerator lezgo ()
+	{
+		yield return new WaitForSeconds (2f);
+		text.text = "The Butcher wants her chemicals.";
+		yield return new WaitForSeconds(2.5f);
+		text.text = "The Butcher wants her chemicals.\nShe'll leave me alone if I give them to her...";
+		yield return new WaitForSeconds(2.5f);
+		text.text = "The Butcher wants her chemicals.\nShe'll leave me alone if I give them to her...\nAnd my car's probably locked.";
 		yield return new WaitForSeconds(2.5f);
 		continueGame.GetComponent<Image>().enabled = true;
 		wait.GetComponent<Image>().enabled = true;
