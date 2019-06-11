@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class playerNext : MonoBehaviour {
 	public Image flash;
 	public Text text;
+	public Text speech;
 	public Button continueGame;
 	public Button wait;
 	public bool ready; 
@@ -14,6 +15,11 @@ public class playerNext : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
+		// button.GetComponent<Image>().sprite = Image1;
+		continueGame.GetComponent<Image>().enabled = false;
+		wait.GetComponent<Image>().enabled = false;
+		continueGame.interactable = false;
+		wait.interactable = false;
 		if (GameObject.Find ("epoxy") == null && GameObject.Find ("chemicals") != null && GameObject.Find ("brokenkeyFob") != null) {
 			ready = true;
 		} else {
@@ -29,6 +35,7 @@ public class playerNext : MonoBehaviour {
 	private void OnTriggerEnter2D (Collider2D other)
 	{
 		if(other.name.Equals("parkingLot") && ready == false){
+			speech.enabled = false;
 			flash.enabled = true;
 			StartCoroutine(choices());
 		}
@@ -46,7 +53,9 @@ public class playerNext : MonoBehaviour {
 		yield return new WaitForSeconds(2.5f);
 		text.text = "I'm not sure I'm ready to escape yet.\nIs there something else I need to find...?\nI can still try...";
 		yield return new WaitForSeconds(2.5f);
-		continueGame.enabled = true;
-		wait.enabled = true;
+		continueGame.GetComponent<Image>().enabled = true;
+		wait.GetComponent<Image>().enabled = true;
+		continueGame.interactable = true;
+		wait.interactable = true;
 	}
 }

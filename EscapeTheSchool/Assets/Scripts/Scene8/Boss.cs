@@ -31,7 +31,9 @@ public class Boss : MonoBehaviour {
 		if (other.name.Equals ("Player")) {
 			StartCoroutine (lose ());
 		} else if (other.name.Equals ("chemicals")) {
+			Destroy(GameObject.Find("chemicals"));
 			Destroy (gameObject);
+			SceneManager.LoadScene ("CreditsScene");
 		}
 	}
 
