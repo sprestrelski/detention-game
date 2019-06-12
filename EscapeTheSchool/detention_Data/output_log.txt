@@ -1,0 +1,93 @@
+Initialize engine version: 5.6.4f1 (ac7086b8d112)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x412)
+    Vendor:   Intel
+    VRAM:     1136 MB
+    Driver:   20.19.15.4835
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\prestrelskis7701\Documents\GitHub\EscapeTheSchool\EscapeTheSchool\detention_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\prestrelskis7701\Documents\GitHub\EscapeTheSchool\EscapeTheSchool\detention_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\prestrelskis7701\Documents\GitHub\EscapeTheSchool\EscapeTheSchool\detention_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\prestrelskis7701\Documents\GitHub\EscapeTheSchool\EscapeTheSchool\detention_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\prestrelskis7701\Documents\GitHub\EscapeTheSchool\EscapeTheSchool\detention_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\prestrelskis7701\Documents\GitHub\EscapeTheSchool\EscapeTheSchool\detention_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\prestrelskis7701\Documents\GitHub\EscapeTheSchool\EscapeTheSchool\detention_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\prestrelskis7701\Documents\GitHub\EscapeTheSchool\EscapeTheSchool\detention_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\prestrelskis7701\Documents\GitHub\EscapeTheSchool\EscapeTheSchool\detention_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\prestrelskis7701\Documents\GitHub\EscapeTheSchool\EscapeTheSchool\detention_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.018 seconds
+Platform assembly: C:\Users\prestrelskis7701\Documents\GitHub\EscapeTheSchool\EscapeTheSchool\detention_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\prestrelskis7701\Documents\GitHub\EscapeTheSchool\EscapeTheSchool\detention_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.403292 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.067600 ms
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 354.
+Total: 3.546631 ms (FindLiveObjects: 0.030437 ms CreateObjectMapping: 0.015572 ms MarkObjects: 0.175898 ms  DeleteObjects: 3.324015 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.825696 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 372.
+Total: 4.571229 ms (FindLiveObjects: 0.018049 ms CreateObjectMapping: 0.015572 ms MarkObjects: 0.146168 ms  DeleteObjects: 4.391084 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.335162 ms
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 378.
+Total: 3.769247 ms (FindLiveObjects: 0.014156 ms CreateObjectMapping: 0.014156 ms MarkObjects: 0.137320 ms  DeleteObjects: 3.603258 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.365599 ms
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 376.
+Total: 0.238895 ms (FindLiveObjects: 0.017695 ms CreateObjectMapping: 0.018049 ms MarkObjects: 0.141567 ms  DeleteObjects: 0.061228 ms)
+
+started anim
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'S8Button') is missing!
+ 
+(Filename:  Line: 1744)
+
+The referenced script on this Behaviour (Game Object 'S4Button') is missing!
+ 
+(Filename:  Line: 1744)
+
+The referenced script on this Behaviour (Game Object 'S7Button') is missing!
+ 
+(Filename:  Line: 1744)
+
+The referenced script on this Behaviour (Game Object 'DetentionButton') is missing!
+ 
+(Filename:  Line: 1744)
+
+The referenced script on this Behaviour (Game Object 'S5Button') is missing!
+ 
+(Filename:  Line: 1744)
+
+The referenced script on this Behaviour (Game Object 'S6Button') is missing!
+ 
+(Filename:  Line: 1744)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.362413 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 511.
+Total: 0.230755 ms (FindLiveObjects: 0.016280 ms CreateObjectMapping: 0.016634 ms MarkObjects: 0.173420 ms  DeleteObjects: 0.023712 ms)
+
+application quit
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1b5c -> priority: 1 
+  Thread -> id: 1f2c -> priority: 1 

@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour {
 	public GameObject map;
 	public float speed;             //Floating point variable to store the player's movement speed.
 	private GameObject instantiatedObj;
-
+	public GameObject exitB;
 
 	// Use this for initialization
 	void Start()
@@ -15,6 +15,11 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void Update (){
+		if (GameObject.Find ("exit") != null) {
+			exitB = GameObject.Find ("exit");
+			exitB.transform.position = new Vector3(36f,19f,0);
+		}
+
 		Scene currentScene = SceneManager.GetActiveScene ();
 		float horizontalInput = Input.GetAxis ("Horizontal");
 		transform.Translate (new Vector3 (1, 0, 0) * Time.deltaTime * speed * horizontalInput);
