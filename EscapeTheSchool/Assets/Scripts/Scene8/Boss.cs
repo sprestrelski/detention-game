@@ -8,13 +8,16 @@ public class Boss : MonoBehaviour {
 
 
 	private GameObject instantiatedObj;
-
+	public GameObject meltPrefab;
 	public float speed;
 	public Transform target;
+	public bool death;
+
 	// Use this for initialization
 	void Start ()
 	{
 		speed = 15f;
+		death = false;
 	}
 	
 	// Update is called once per frame
@@ -25,9 +28,11 @@ public class Boss : MonoBehaviour {
 
 	private void OnTriggerEnter2D (Collider2D other)
 	{
-		if (other.name.Equals ("chemicals")) {
+		if (other.name.Equals ("chemicals") && death == false) {
 			Destroy(GameObject.Find("chemicals"));
-			Destroy (gameObject);
+			Instantiate(meltPrefab, transform.position, Quaternion.identity);
+			Destroy(gameObject);
+			death = true;
 		}
 	}
 
