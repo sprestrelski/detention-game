@@ -1070,6 +1070,7 @@ GameObject:
   - component: {fileID: 1831397534}
   - component: {fileID: 1831397537}
   - component: {fileID: 1831397536}
+  - component: {fileID: 1831397538}
   m_Layer: 0
   m_Name: parkingLot
   m_TagString: Untagged
@@ -1181,6 +1182,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2409244, y: 7.305669}
   m_EdgeRadius: 0
+--- !u!114 &1831397538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1831397533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507f86c57148a0c42abbfbec0ab4d41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSprites: []
+  player: {fileID: 0}
 --- !u!1 &1856115354
 GameObject:
   m_ObjectHideFlags: 0

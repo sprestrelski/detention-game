@@ -1130,6 +1130,7 @@ GameObject:
   - component: {fileID: 1162639338}
   - component: {fileID: 1162639337}
   - component: {fileID: 1162639336}
+  - component: {fileID: 1162639347}
   m_Layer: 0
   m_Name: detentionRoom
   m_TagString: Untagged
@@ -1471,6 +1472,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1162639347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1162639335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507f86c57148a0c42abbfbec0ab4d41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSprites: []
+  player: {fileID: 0}
 --- !u!1001 &1167181664
 Prefab:
   m_ObjectHideFlags: 0

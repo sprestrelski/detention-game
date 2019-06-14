@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 148048566}
   - component: {fileID: 148048565}
   - component: {fileID: 148048575}
+  - component: {fileID: 148048576}
   m_Layer: 0
   m_Name: detentionRoom
   m_TagString: Untagged
@@ -467,6 +468,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &148048576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148048564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507f86c57148a0c42abbfbec0ab4d41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSprites: []
+  player: {fileID: 0}
 --- !u!1 &272461413
 GameObject:
   m_ObjectHideFlags: 0
