@@ -5,6 +5,9 @@ This is my final project for Game Design.
 ### Gameplay
 Three students decide to investigate an abandoned school. When discovered by a ghost who haunts the school, the player is caught and sent to detention. The player must then explore rooms and solve puzzles to collect items that will help them escape. The player can go to other rooms by opening and clicking on locations on the map. Includes a cake minigame where the player must put together ingredients to bake certain kinds of cake, a mock AP test with trivia about the school, and a final boss fight. If the player is defeated by the final boss, they are sent back to detention and must start over without any of the previously collected items.
 
+Sample Gameplay: <br>
+<img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/TitleScreen.PNG" height = "250">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/CollectedMap.PNG" height = "250">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/KeyFobRetrieved.PNG" height = "250">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/Escape..PNG" height = "250">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/Hallway.PNG" height = "250">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/HallwayColliders.PNG" height = "250">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/CakeMinigame.PNG" height = "250">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/CreditsScroll.PNG" height = "250">    
+
 ### How to Play
 You can download and play the game by downloading the zip file <code>detention.zip</code>. Extract the files to a folder. The <code>detention_Data</code> folder and the <code>detention.exe</code> need to be in the same folder in order to run. Run the executable.
 
@@ -29,7 +32,7 @@ Three minigames <br>
 <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/BADEND.png" height = "250">
 
 All sprites made for this minigame can be found on my [Piskel.](https://www.piskelapp.com/user/5742736389439488/public) <br>
-<img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/Player.png" width = "100">
+<img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/Player.png" width = "100">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/CharacterSprites.png" width = "200">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/CakeSprites.png" width = "200">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/melt.gif" height = width = "50">  
 
 ### Credits
 Concept by "MASA Studios" during Game Design 2019. <br>
