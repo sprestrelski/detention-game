@@ -9,26 +9,33 @@ Three students decide to investigate an abandoned school. When discovered by a g
 You can download and play the game by downloading the zip file <code>detention.zip</code>. Extract the files to a folder. The <code>detention_Data</code> folder and the <code>detention.exe</code> need to be in the same folder in order to run. Run the executable.
 
 ### Content
-Features 7 unique rooms made first using Piskel and turned into tilemaps using Tiled. <br>
+Features 6 unique pixel art rooms made first using Piskel and turned into tilemaps using Tiled. <br>
 - Parking lot
 - Detention room
 - Chemistry room
-- Chemistry minigame room
 - Physics room
 - Gym
-- Hallway
-Two minigames <br>
-- Make different kinds of cake using ingredients
-- Mock test
-Boss fight <br>
-- Defeat the boss before she can touch the player
-All sprites made for this minigame can be found on my [Piskel.](https://www.piskelapp.com/user/5742736389439488/public)
+- Hallway<br>
+<img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Tilemaps/parkingLot.png" height = "200">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Tilemaps/detentionRoom.png" height = "200">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Tilemaps/chemistryRoom.png" height = "200">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Tilemaps/physicsRoom.png" height = "200">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Tilemaps/gym.png" height = "200">  <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Tilemaps/hallwayTilemap.png" height = "200">
+
+Three minigames <br>
+- Cake minigame: Make different kinds of cake by combining different ingredients
+
+<img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/minigame-chemroom--.png" height = "200">
+
+- Mock test: Answer trivia questions about the school to get epoxy
+- Boss fight: Defeat the boss before she can touch the player
+
+<img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/BADEND.png" height = "250">
+
+All sprites made for this minigame can be found on my [Piskel.](https://www.piskelapp.com/user/5742736389439488/public) <br>
+<img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/Player.png" width = "100">
 
 ### Credits
 Concept by "MASA Studios" during Game Design 2019. <br>
 Project lead, programming, and pixel art: Samantha Prestrelski<br>
 Programming, animation, and audio: Meilong Zhang<br>
-Art and writing: Audrey Chan<br>
+Art, characters, writing: Audrey Chan<br>
 Writing: Alfred Quan<br>
 
 <img src="https://raw.githubusercontent.com/SamP923/Video-Game_detention/master/Images/MASA-logo.png" width="200">
