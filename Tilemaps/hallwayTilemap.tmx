@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="16" height="9" tilewidth="480" tileheight="480" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="hallwaytileset.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="16" height="9">
+  <data encoding="csv">
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+4,4,6,4,4,4,4,8,4,4,4,4,4,5,4,4,
+9,9,7,9,9,9,9,9,9,9,9,9,9,7,9,9,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+</data>
+ </layer>
+</map>

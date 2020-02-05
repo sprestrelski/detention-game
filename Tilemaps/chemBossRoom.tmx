@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="16" height="9" tilewidth="480" tileheight="480" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="chemBossRoom.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="16" height="9">
+  <data encoding="csv">
+31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,
+31,13,18,23,23,23,24,25,25,26,23,23,23,23,29,31,
+31,14,11,1,8,1,1,8,1,1,8,1,1,1,22,31,
+31,14,12,1,10,1,1,10,1,1,10,1,1,1,22,31,
+31,14,11,1,1,1,1,1,1,1,1,1,1,1,22,31,
+31,14,12,1,8,1,1,8,1,1,8,1,1,1,22,31,
+31,14,11,1,10,1,1,10,1,1,10,1,1,1,22,31,
+31,15,17,21,21,21,21,21,21,21,21,21,21,21,28,31,
+31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31
+</data>
+ </layer>
+</map>

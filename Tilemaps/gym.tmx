@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="16" height="9" tilewidth="480" tileheight="480" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="gym.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="16" height="9">
+  <data encoding="csv">
+24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,
+24,4,10,16,2,2,2,22,23,2,2,2,19,13,7,24,
+24,5,11,17,1,1,1,1,1,1,1,1,20,14,8,24,
+24,5,11,17,1,1,1,1,1,1,1,1,20,14,8,24,
+24,5,11,17,1,1,1,1,1,1,1,1,20,14,8,24,
+24,5,11,17,1,1,1,1,1,1,1,1,20,14,8,24,
+24,5,11,17,1,1,1,1,1,1,1,1,20,14,8,24,
+24,6,12,18,3,3,3,3,3,3,3,3,21,15,9,24,
+24,24,24,24,24,24,24,22,24,24,24,24,24,24,24,24
+</data>
+ </layer>
+</map>
